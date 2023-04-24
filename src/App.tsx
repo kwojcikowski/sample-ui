@@ -1,14 +1,12 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import {CounterPage} from "./counter/CounterPage";
+
 
 function App() {
   return (
     <div className="App">
-      <CounterPage/>
+        <h1>Hello World</h1>
     </div>
   );
 }
 
-export default App;
+export default App
