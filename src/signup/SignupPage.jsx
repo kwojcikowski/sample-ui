@@ -1,5 +1,6 @@
 import "./SignupPage.css";
 import { Formik } from "formik";
+import { useState } from "react";
 import * as Yup from "yup";
 
 const schema = Yup.object().shape({
@@ -30,6 +31,7 @@ const SignupPage = () => {
           values,
           errors,
           touched,
+          isValid,
           handleChange,
           handleBlur,
           handleSubmit,
@@ -92,7 +94,7 @@ const SignupPage = () => {
                   {errors.age && touched.age && errors.age}
                 </p>
 
-                <button type="submit">Sign Up</button>
+                <button type="submit" disabled={!isValid}>Sign Up</button>
               </form>
             </div>
           </div>
