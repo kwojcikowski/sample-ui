@@ -59,6 +59,11 @@ body {
   background: #395591;
 }
 
+.form button:disabled {
+  background: gray;
+  cursor: default;
+}
+
 .form span {
   font-size: 40px;
   color: #4b6cb7;
