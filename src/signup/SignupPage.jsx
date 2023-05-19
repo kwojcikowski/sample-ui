@@ -40,11 +40,11 @@ const SignupPage = () => {
         }) => (
           <div className="login">
             <div className="form">
-              <form model="" name="Signup" noValidate onSubmit={handleSubmit}>
+              <form model="Signup" noValidate onSubmit={handleSubmit}>
                 <span>Signup</span>
                 
                 <input
-                  model-attribute=""
+                  model-attribute="email"
                   type="email"
                   name="email"
                   onChange={handleChange}
@@ -59,7 +59,7 @@ const SignupPage = () => {
                 </p>
 
                 <input
-                  model-attribute=""
+                  model-attribute="password"
                   id="password"
                   type="password"
                   name="password"
@@ -74,7 +74,7 @@ const SignupPage = () => {
                 </p>
 
                 <input
-                  model-attribute=""
+                  model-attribute="confirmPassword"
                   id="confirmPassword"
                   type="password"
                   name="confirmPassword"
@@ -89,7 +89,7 @@ const SignupPage = () => {
                 </p>
 
                 <input
-                  model-attribute=""
+                  model-attribute="age"
                   id="age"
                   type="number"
                   name="age"
