@@ -14,7 +14,7 @@ export const CounterPage = () => {
                     <button model-function="decreaseCount" id="decrease-count-btn" onClick={() => setCount(count - 1)}>
                         -
                         <constraint>
-                            post counterWasDecremented: self.count = self.count@pre - 1
+                            post counterWasDecremented: self.count.toInteger() = self.count@pre.toInteger() - 1
                         </constraint>
                     </button>
                 </Col>
@@ -27,7 +27,7 @@ export const CounterPage = () => {
                     <button model-function="increaseCount" id="increase-count-btn" onClick={() => setCount(count + 1)}>
                         +
                         <constraint>
-                            post counterWasIncremented: self.count = self.count@pre + 1
+                            post counterWasIncremented: self.count.toInteger() = self.count@pre.toInteger() + 1
                         </constraint>
                     </button>
                 </Col>
@@ -35,7 +35,7 @@ export const CounterPage = () => {
             <button model-function="resetState" id="reset-state-btn" onClick={() => setCount(0)}>
                 Reset
                 <constraint>
-                    post counterWasReset: self.count = 0
+                    post counterWasReset: self.count.toInteger() = 0
                 </constraint>
             </button>
         </div>

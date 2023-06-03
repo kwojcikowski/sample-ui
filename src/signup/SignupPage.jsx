@@ -54,7 +54,7 @@ const SignupPage = () => {
                   className="form-control inp_text"
                   id="email"
                 />
-                <p model-attribute="" id="emailErrorMessage" className="error">
+                <p model-attribute="emailErrorMessage" id="emailErrorMessage" className="error">
                   {errors.email && touched.email && errors.email}
                 </p>
 
@@ -69,7 +69,7 @@ const SignupPage = () => {
                   placeholder="Enter password"
                   className="form-control"
                 />
-                <p model-attribute="" id="passwordErrorMessage" className="error">
+                <p model-attribute="passwordErrorMessage" id="passwordErrorMessage" className="error">
                   {errors.password && touched.password && errors.password}
                 </p>
 
@@ -84,7 +84,7 @@ const SignupPage = () => {
                   placeholder="Confirm password"
                   className="form-control"
                 />
-                <p model-attribute="" id="confirmPasswordErrorMessage" className="error">
+                <p model-attribute="confirmPasswordErrorMessage" id="confirmPasswordErrorMessage" className="error">
                   {errors.confirmPassword && touched.confirmPassword && errors.confirmPassword}
                 </p>
 
@@ -99,7 +99,7 @@ const SignupPage = () => {
                   placeholder="Enter age"
                   className="form-control"
                 />
-                <p model-attribute="" id="ageErrorMessage" className="error">
+                <p model-attribute="ageErrorMessage" id="ageErrorMessage" className="error">
                   {errors.age && touched.age && errors.age}
                 </p>
 
