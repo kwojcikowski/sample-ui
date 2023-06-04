@@ -7,6 +7,8 @@ import {
 } from "react-router-dom";
 import { CounterPage } from './counter/CounterPage';
 import SignupPage from './signup/SignupPage';
+import { DemoCounterPage } from './demo/counter/DemoCounterPage';
+import DemoSignupPage from './demo/signup/DemoSignupPage';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +22,14 @@ const router = createBrowserRouter([
   {
     path: "/signup",
     element: <SignupPage/>,
+  },
+  {
+    path: "/demo-counter",
+    element: <DemoCounterPage/>,
+  },
+  {
+    path: "/demo-signup",
+    element: <DemoSignupPage/>,
   },
 ]);
 
